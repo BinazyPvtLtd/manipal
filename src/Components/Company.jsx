@@ -1,14 +1,14 @@
 import React from "react";
-import comp1 from "../assets/com1.jpg";
-import comp2 from "../assets/com2.jpg";
-import comp3 from "../assets/com3.jpg";
-import comp4 from "../assets/com4.jpg";
-import comp5 from "../assets/com5.jpg";
-import comp6 from "../assets/com6.jpg";
-import comp7 from "../assets/com7.jpg";
-import comp8 from "../assets/comp8.jpg";
-import comp9 from "../assets/comp9.jpg";
-import comp10 from "../assets/comp10.jpg";
+import comp1 from "../assets/company1.jpg";
+import comp2 from "../assets/company2.jpg";
+import comp3 from "../assets/company3.jpg";
+import comp4 from "../assets/company4.jpg";
+import comp5 from "../assets/company5.jpg";
+import comp6 from "../assets/company6.jpg";
+import comp7 from "../assets/company7.jpg";
+import comp8 from "../assets/company8.jpg";
+import comp9 from "../assets/company9.jpg";
+import comp10 from "../assets/company10.jpg";
 
 const images = [
   comp1,
