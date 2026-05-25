@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --layout-x: clamp(1rem, 4vw, 4rem);
+  --section-y: clamp(2rem, 5vw, 3.5rem);
+  --section-y-tight: clamp(1rem, 3vw, 1.5rem);
+  --container-max: 80rem;
+}
+
+.page-header {
+  padding: 0.75rem var(--layout-x);
+}
+
+.page-section {
+  padding: var(--section-y) var(--layout-x);
+}
+
+.page-section-tight {
+  padding-block: var(--section-y-tight);
+}
+
+.page-container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+.impact-strip {
+  animation: impact-strip 38s linear infinite;
+  will-change: transform;
+}
+
+.company-strip {
+  animation: company-strip 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes impact-strip {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes company-strip {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .impact-strip,
+  .company-strip {
+    animation: none;
+    transform: translateX(0);
+  }
+}
