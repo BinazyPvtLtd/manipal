@@ -25,6 +25,50 @@
   margin-inline: auto;
 }
 
+.section-title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.section-copy {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.75;
+}
+
+.content-title {
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.content-subtitle {
+  font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.content-copy {
+  font-size: clamp(0.95rem, 1vw, 1.0625rem);
+  line-height: 1.8;
+}
+
+.compact-copy {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.faq-question {
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.faq-answer {
+  font-size: clamp(0.95rem, 1.1vw, 1.0625rem);
+  line-height: 1.75;
+}
+
 .impact-strip {
   animation: impact-strip 38s linear infinite;
   will-change: transform;

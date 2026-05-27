@@ -54,11 +54,11 @@ const Benefits = () => {
                   </div>
 
                   <div className="min-w-0">
-                    <h3 className="text-base font-semibold leading-snug md:text-lg">
+                    <h3 className="text-base font-semibold leading-snug">
                       {item.title}
                     </h3>
 
-                    <p className="mt-1.5 text-sm leading-6 text-white/85 md:text-[15px]">
+                    <p className="compact-copy mt-1.5 text-white/85">
                       {item.desc}
                     </p>
                   </div>

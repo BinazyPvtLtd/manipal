@@ -9,7 +9,7 @@ const ReviewCard = ({ image, desc }) => {
         className="h-52 w-full  object-cover sm:h-60"
       />
 
-      <p className="pt-4 text-sm leading-6 text-gray-700 sm:text-base">
+      <p className="compact-copy pt-4 text-gray-700">
         {desc}
       </p>
     </div>

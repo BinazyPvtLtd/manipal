@@ -38,11 +38,11 @@ const Review = () => {
         
         {/* Heading */}
         <div className="max-w-3xl">
-          <h1 className="text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+          <h1 className="section-title">
             Student <span className="italic">speak</span> on Online Manipal
           </h1>
 
-          <p className="mt-4 text-base text-gray-600 sm:text-lg lg:text-sm">
+          <p className="section-copy mt-4 text-gray-600">
             Hear from our Online Manipal students about their experiences and
             success stories with Online Manipal programs.
           </p>

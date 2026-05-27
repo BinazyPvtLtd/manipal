@@ -74,10 +74,10 @@ const AllCourses = () => {
       <section className="page-section bg-blue-950">
         <div className="page-container">
           <div className="mb-10 max-w-3xl">
-            <h2 className="text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="section-title text-white">
               Explore all courses
             </h2>
-            <p className="mt-4 text-base leading-7 text-white/70">
+            <p className="section-copy mt-4 text-white/70">
               Browse online degrees and certifications across management,
               technology, commerce, arts, analytics, media, and supply chain.
             </p>
@@ -86,13 +86,15 @@ const AllCourses = () => {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {courseSections.map((section) => (
               <div key={section.title} className="rounded-lg p-6 text-white/90">
-                <h3 className="mb-4 text-2xl font-semibold text-orange-500">
+                <h3 className="mb-4 text-xl font-semibold leading-snug text-orange-500">
                   {section.title}
                 </h3>
 
                 <ul className="space-y-3">
                   {section.items.map((item) => (
-                    <li key={item} className="list-none hover:text-orange-400">
+                    <li
+                      key={item}
+                      className="compact-copy list-none hover:text-orange-400">
                       {item}
                     </li>
                   ))}
@@ -102,7 +104,7 @@ const AllCourses = () => {
           </div>
         </div>
       </section>
-      <div className="bg-blue-950 px-4   py-5 text-center text-xl text-white/80">
+      <div className="bg-blue-950 px-4 py-5 text-center text-sm text-white/80 sm:text-base">
         Copyright &copy; 2024. All rights reserved Manipal Online
       </div>
       <div></div>

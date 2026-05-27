@@ -58,37 +58,37 @@ const courses = [
   {
     id: 5,
     title: "MBA",
-    university: "Manipal Academy of Higher Education ",
-    degree: "Masters Of Bussiness Education ",
+    university: "Manipal Academy of Higher Education",
+    degree: "Master of Business Administration",
     duration: "24 Months",
-    fee: "2,80,000",
+    fee: "INR 2,80,000",
     image: Card5,
   },
   {
     id: 6,
     title: "BA",
     university: "Sikkim Manipal University",
-    degree: "Bachelor Of Arts ",
+    degree: "Bachelor of Arts",
     duration: "36 Months",
-    fee: "75,000",
+    fee: "INR 75,000",
     image: Card6,
   },
   {
     id: 7,
     title: "BBA",
     university: "Manipal University Jaipur",
-    degree: "Bachelor Of Business Administration ",
+    degree: "Bachelor of Business Administration",
     duration: "36 Months",
-    fee: "1,35,000",
+    fee: "INR 1,35,000",
     image: Card7,
   },
   {
     id: 8,
     title: "MCA",
     university: "Sikkim Manipal University",
-    degree: "Master of Computer Applications ",
+    degree: "Master of Computer Applications",
     duration: "24 Months",
-    fee: "98,000",
+    fee: "INR 98,000",
     image: Card8,
   },
   {
@@ -120,24 +120,24 @@ const courses = [
   },
   {
     id: 12,
-    title: "MCA",
-    university: "Sikkim Manipal University",
-    degree: "Master of Computer Applications",
+    title: "MCOM",
+    university: "Manipal University Jaipur",
+    degree: "Master of Commerce",
     duration: "24 Months",
-    fee: "INR 98,000",
+    fee: "INR 1,08,000",
     image: Card12,
   },
 ];
 
-export default function CourseCards() {
+export default function CourseCards({ onReadMoreClick }) {
   return (
     <section className="page-section bg-gray-100">
       <div className="page-container mb-12">
-        <h2 className="mb-4 text-2xl font-bold md:text-4xl">
+        <h2 className="section-title mb-4">
           Explore Our Online Manipal Degrees & Certifications
         </h2>
 
-        <p className="text-base md:text-lg">
+        <p className="section-copy max-w-4xl text-gray-700">
           Explore flexible, accredited degrees and certifications with Online
           Manipal University, designed for career growth and professional
           success.
@@ -160,38 +160,41 @@ export default function CourseCards() {
             <div className="mt-2 flex min-h-12 items-center gap-2 bg-violet-100 px-3 py-2">
               <FaGraduationCap className="text-lg text-gray-800" />
 
-              <h2 className="text-xl font-semibold text-blue-950">
+              <h2 className="text-lg font-semibold leading-tight text-blue-950">
                 {course.title}
               </h2>
             </div>
 
             {/* Content */}
             <div className="flex flex-1 flex-col p-3">
-              <h3 className="min-h-12 text-base font-bold leading-snug text-blue-950">
+              <h3 className="min-h-12 text-[15px] font-bold leading-snug text-blue-950">
                 {course.university}
               </h3>
 
               <div className="my-3 border-t border-gray-300"></div>
 
-              <p className="mb-4 min-h-10 text-sm text-gray-500">
+              <p className="compact-copy mb-4 min-h-10 text-gray-500">
                 {course.degree}
               </p>
 
               {/* Bottom Info */}
-              <div className="mt-auto mb-4 flex items-center justify-between gap-2 text-xs text-black">
-                <div className="flex items-center gap-1">
+              <div className="mt-auto mb-4 flex flex-wrap items-center justify-between gap-x-3 gap-y-2 text-[13px] text-black">
+                <div className="flex min-w-0 items-center gap-1">
                   <FaRegCalendarAlt />
                   <span>{course.duration}</span>
                 </div>
 
-                <div className="flex items-center gap-1">
+                <div className="flex min-w-0 items-center gap-1">
                   <FaMoneyBillWave />
                   <span>{course.fee}</span>
                 </div>
               </div>
 
               {/* Button */}
-              <button className="w-fit rounded-full bg-orange-400 px-4 py-2 text-xs font-medium text-white transition hover:bg-orange-500">
+              <button
+                type="button"
+                onClick={onReadMoreClick}
+                className="w-fit rounded-full bg-orange-400 px-4 py-2 text-xs font-medium text-white transition hover:bg-orange-500">
                 READ MORE
               </button>
             </div>

@@ -22,9 +22,9 @@ export default function LimitedOffer() {
   return (
     <section className="page-section page-section-tight w-full bg-[#f8f3de]">
       <div className="page-container">
-        <div className="mb-5 flex items-center justify-center gap-2">
+        <div className="mb-5 flex items-center justify-center gap-2 text-center">
           <span className="text-2xl">🔥</span>
-          <h2 className="text-2xl font-bold text-orange-300 sm:text-3xl">
+          <h2 className="text-xl font-bold text-orange-300 sm:text-3xl">
             Limited Time Offer!
           </h2>
         </div>
@@ -46,7 +46,7 @@ export default function LimitedOffer() {
         <div className="mt-5 flex justify-center">
           <button
             type="button"
-            className="rounded-full bg-[#f28c34] px-8 py-3 text-sm font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e77d23] sm:px-10 sm:text-base">
+            className="rounded-full bg-[#f28c34] px-5 py-3 text-sm font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e77d23] sm:px-10 sm:text-base">
             ENROLL NOW & SAVE
           </button>
         </div>
